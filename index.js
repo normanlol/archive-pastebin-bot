@@ -63,7 +63,11 @@ function archiveAll(array, src) {
 
                     console.log("[i] successfully archived " + array[c]);
                 } else {
-                    console.log("[!] there was an error archiving " + array[c], JSON.parse(resp.resp));
+                    if (resp.resp) {
+                        console.log("[!] there was an error archiving " + array[c], JSON.parse(resp.resp));
+                    } else {
+                        console.log("[!] there was an error archiving " + array[c], resp);
+                    }
                 }
             }
         });
