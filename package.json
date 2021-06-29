@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cheerio": "*",
+    "got": "^11.8.2",
+    "linkifyjs": "*",
+    "redddit": "^1.1.0"
+  }
+}
